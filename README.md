@@ -86,7 +86,7 @@ channels = 3
 batch size = 8
 epochs = 400
 
-- **models [StyleGAN models](https://drive.google.com/drive/folders/1Wr6qyF4eJwQFRsU56VKkzFxNGrNhcWSv?usp=sharing) 
+- **models** [StyleGAN models](https://drive.google.com/drive/folders/1Wr6qyF4eJwQFRsU56VKkzFxNGrNhcWSv?usp=sharing) 
 
 #### Evaluation
 - **Training Performance:** The model was trained for 400 epochs to generate higher-quality images. The FID score reduced and did not fluctuate towards the end of the training process.
