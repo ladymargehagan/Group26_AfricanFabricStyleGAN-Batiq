@@ -1,10 +1,6 @@
 # Group26_AfricanFabricStyleGAN-Batiq
 <h1 align="center">🌍 Generating African Batik Prints Using StyleGAN </h1>
 
-<p align="center">
-  <img src="imgs/batik_print.jpg" alt="Batik Prints Generation" />
-</p>
-
 <p align="justify">
   Welcome to the Batiq project! This repository contains the code and resources for generating African Batik prints using StyleGAN. Our aim is to leverage the power of deep learning to create unique and authentic Batik designs, celebrating the rich heritage of African culture.
 </p>
