@@ -10,14 +10,13 @@
 </p>
 
 ## Project Overview 💡
-This project aims to develop a machine-learning model to generate African Batik prints using StyleGAN. The primary goal is to produce high-quality, unique Batik designs that can be used by artisans and designers. The project involves data collection, model development, validation, testing, and creating a user-friendly interface for generating new prints.
+This project aims to develop a machine-learning model to generate African Batik prints using StyleGAN. The primary goal is to produce unique Batik designs that can be used by artisans and designers. The project involves data collection, model development, validation, testing, and creating a user-friendly interface for generating new prints.
 
 ## Dataset 📊
-We use a custom dataset containing images of African Batik prints. The dataset includes various Batik patterns and designs. We preprocess the data by handling missing values, resizing images, and normalizing pixel values. [Link to Kaggle dataset here](https://www.kaggle.com/datasets/mikuns/african-fabric)
+We used a kaggle dataset containing images of African Batik prints. We preprocess the data by resizing images and normalizing pixel values. [Link to Kaggle dataset here](https://www.kaggle.com/datasets/mikuns/african-fabric)
 
 ## Data Preprocessing 📋
 The data preprocessing involves:
-- Cleaning the data by removing any missing or inconsistent values.
 - Resizing images to a consistent size for model input.
 - Normalizing pixel values to the range [-1, 1].
 
@@ -27,7 +26,7 @@ Feature engineering steps include:
 - Using AdaIN (Adaptive Instance Normalization) to combine content and style features.
 
 ## Model Training 🧑🏻‍💻
-The StyleGAN model is built using TensorFlow and Keras. We trained the model on the preprocessed dataset, adjusting hyperparameters such as the number of layers, the number of neurons per layer, and the learning rate. We used techniques like regularization and dropout to prevent overfitting.
+The StyleGAN model is built using TensorFlow and Keras. We trained the model on the dataset, adjusting hyperparameters such as the number of layers, the number of neurons per layer, and the learning rate. We used techniques like regularization and dropout to prevent overfitting.
 
 ## Evaluation and Optimization 📈
 Once the model was trained, we evaluated its performance using various metrics. We computed metrics such as Frechet Inception Distance (FID) to assess the quality of generated images. Optimization techniques, including parameter tuning and cross-validation, were employed to enhance model performance.
@@ -70,10 +69,9 @@ To run the project locally, follow these steps:
     ```
 
 ## Results and Discussion 📊
-In this section, we present the results of our Batik print generation experiments. We discuss the model's performance, its strengths, limitations, and potential areas of improvement. We also provide visualizations of the generated prints.
 
 #### Performance Metrics
-- **Frechet Inception Distance (FID):** 12.34
+- **Frechet Inception Distance (FID):** averagely 25
 
 #### Visualizations
 
@@ -88,33 +86,25 @@ In this section, we present the results of our Batik print generation experiment
 #### Model Details
 - **Model Architecture:** The StyleGAN model consists of several layers with adaptive instance normalization (AdaIN). The optimizer used is Adam.
 - **Hyperparameters:** The best hyperparameters were found using Grid Search CV with the following values:
-  - Learning rate: 0.0001
-  - Batch size: 16
+  
+latent dimensionality = 512
+image size = 512
+channels = 3
+batch size = 8
+epochs = 400
 
 #### Evaluation
-- **Training Performance:** The model was trained for 100 epochs with early stopping to prevent overfitting. The training loss consistently decreased, indicating the model's ability to learn from the data.
+- **Training Performance:** The model was trained for 400 epochs to generate higher-quality images. The FID score reduced and did not fluctuate towards the end of the training process.
 - **Example Outputs:** The model's generated prints were visually assessed to ensure quality and diversity.
 
 #### Discussion
-- **Strengths:** The StyleGAN model effectively captures the intricate patterns and designs of Batik prints, making it suitable for generative art applications. The model achieved a low FID score, indicating high-quality outputs.
-- **Limitations:** The model's performance can vary with different hyperparameters and requires careful tuning. The diversity of generated prints can be further improved.
-- **Areas for Improvement:** Future work could explore alternative model architectures, such as GANs with different normalization techniques, and incorporate additional features like texture or color patterns to enhance the quality of generated prints.
+- **Strengths:** The StyleGAN model effectively captured the intricate patterns and designs of Batik prints, making it suitable for generative art applications. The model achieved a low FID score, indicating high-quality outputs.
+- **Limitations:** The images generated were not as high quality as anticipated due to the computational limitations of colab. 
+- **Areas for Improvement:** Future work could explore alternative model architectures, such as using pre-trained models, increasing the number of layers, and using more images for training.
 
-### Screenshots 📸
-
-Here are some screenshots of the Streamlit app in action:
-
-1. **Main Interface**:
-   - ![Main Interface](imgs/main_interface.png)
-   - Description of the main interface of the app.
-
-2. **Batik Print Generation**:
-   - ![Batik Print Generation](imgs/batik_generation.png)
-   - Description of the Batik print generation feature.
 
 ## YouTube Video 📹
-A demonstration video showing how the application works is available on YouTube. You can watch it [here](https://www.youtube.com/watch?v=your_video_link).
-
+A demonstration video showing how the application works is available on YouTube. You can watch it [here](https://youtu.be/PXudPfDK-II).
+https://youtu.be/PXudPfDK-II
 ---
 
-This README should provide a comprehensive overview of your project and guide users on how to run your application. Feel free to adjust the content as needed to better fit your project specifics.
