@@ -31,7 +31,7 @@ Once the model was trained, we evaluated its performance using various metrics. 
 To run the project locally, follow these steps:
 1. Clone this repository:
     ```bash
-    git clone https://github.com/yourusername/Batiq.git
+    git clone [https://github.com/yourusername/Batiq.git](https://github.com/ladymargehagan/Group26_AfricanFabricStyleGAN-Batiq)
     ```
 2. Navigate to the project directory:
     ```bash
@@ -95,6 +95,5 @@ epochs = 400
 
 ## YouTube Video 📹
 A demonstration video showing how the application works is available on YouTube. You can watch it [here](https://youtu.be/PXudPfDK-II).
-https://youtu.be/PXudPfDK-II
 ---
 
