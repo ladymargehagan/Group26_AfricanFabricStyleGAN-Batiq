@@ -2,11 +2,11 @@
 <h1 align="center">🌍 Generating African Batik Prints Using StyleGAN </h1>
 
 <p align="justify">
-  Welcome to the Batiq project! This repository contains the code and resources for generating African Batik prints using StyleGAN. Our aim is to leverage the power of deep learning to create unique and authentic Batik designs, celebrating the rich heritage of African culture.
+  Welcome to the Batiq project! This repository contains the code and resources for generating African Batik prints using StyleGAN. We aim to leverage the power of deep learning to create unique and authentic Batik designs, celebrating the rich heritage of African culture.
 </p>
 
 ## Project Overview 💡
-This project aims to develop a machine-learning model to generate African Batik prints using StyleGAN. The primary goal is to produce unique Batik designs that can be used by artisans and designers. The project involves data collection, model development, validation, testing, and creating a user-friendly interface for generating new prints.
+This project aims to develop a machine-learning model to generate African Batik prints using StyleGAN. The primary goal is to produce unique Batik designs that artisans and designers can use. The project involves data collection, model development, validation, testing, and creating a user-friendly interface for generating new prints.
 
 ## Dataset 📊
 We used a kaggle dataset containing images of African Batik prints. We preprocess the data by resizing images and normalizing pixel values. [Link to Kaggle dataset here](https://www.kaggle.com/datasets/mikuns/african-fabric)
@@ -78,6 +78,7 @@ To run the project locally, follow these steps:
 
 #### Model Details
 - **Model Architecture:** The StyleGAN model consists of several layers with adaptive instance normalization (AdaIN). The optimizer used is Adam.
+  
 - **Hyperparameters:** 
 latent dimensionality = 512
 image size = 512
